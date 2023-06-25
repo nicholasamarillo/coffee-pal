@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    <title>Coffee Calculator</title>
+</head>
+<body>
+    <main class="bg-gradient-to-b from-amber-950 to-amber-800 min-h-screen min-w-screen">
+        <div class="p-10">
+            <h1 class="text-amber-200 text-center text-6xl font-Caprasimo pb-10">Coffee Pal</h1>
+            <p class="text-amber-500 text-center text-2xl font-Caprasimo">Make the best coffee you can every time!</p>
+        </div>
+        <div class=" flex flex-col items-center">
+            <div class="flex flex-col items-center pb-10">
+                <h3 class="text-white text-center font-Caprasimo pb-5">How many cups of Coffee do you want to make?</h3>
+                <input type="number" class="numOfCups text-center">
+            </div>
+            <div class="flex flex-col items-center pb-10">
+                <h3 class="text-white text-center font-Caprasimo pb-5 max-w-sm">How Strong do you want your coffee to be: light, normal, strong? Please use L, N, or S.</h3>
+                <input type="text" class="strength text-center" style="text-transform: uppercase;">
+            </div>
+            <div class="flex items-center">
+                <button class=" sbmBtn rounded-full bg-white px-3 hover:bg-amber-200 font-Caprasimo" type="submit">Calculate</button>
+            </div>
+        </div>
+        
+        <div class="results p-10">
+            <h2 class="text-white text-center font-Caprasimo text-4xl">Results:</h2>
+            <p class="resultText text-white text-center font-Caprasimo"></p>
+        </div>
+    </main>
+    <script src="/js/index.js"></script>
+</body>
+</html>
